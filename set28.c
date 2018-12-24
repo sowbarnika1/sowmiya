@@ -1,31 +1,32 @@
 int main()
 {
-int a,b,rem,ams=0,temp,k=0,mul=1,i;
+int a,rem,ams=0,temp,k=0,mul=1,i,j,b;
 scanf("%d%d",&a,&b);
 for(i=a;i<b;i++)
 {
 temp=i;
+k=0;
 while(temp>0)
 {
 temp=temp/10;
 k++;
 }
 temp=i;
+ams=0;
 while(temp)
 {
 rem=temp%10;
-for(i=1;i<=k;i++)
+mul=1;
+for(j=1;j<=k;j++)
 {
     mul=mul*rem;
 }
 ams=ams+mul;
-mul=1;
 temp=temp/10;
 }
-//printf("%d",ams);
 if(ams==i)
 {
-printf("%d",ams);
+printf("%d\n",ams);
 }
 }
 return 0;
