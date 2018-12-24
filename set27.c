@@ -2,6 +2,8 @@ int main()
 {
 int a,rem,ams=0,temp,k=0,mul=1,i,j;
 scanf("%d",&a);
+    if(a<=100000)
+    {
 temp=a;
 while(temp>0)
 {
@@ -29,5 +31,10 @@ else
 {
     printf("no");
 }
+    }
+    else
+    {
+        printf("invalid");
+    }
 return 0;
 }
