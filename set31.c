@@ -1,10 +1,12 @@
 int main()
 {
-    int n,a[100],max;
-    scanf("%d",&n);
+    long int n,a[100],max;
+    scanf("%ld",&n);
+    if(n>=1 && n<=100000)
+    {
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%ld",&a[i]);
     }
         max=a[0];
         for(int i=0;i<n;i++)
@@ -15,6 +17,7 @@ int main()
             }
             
         }
-            printf("%d",max);
-    return 0;
+            printf("%ld",max);
+    }
+        return 0;
 }
