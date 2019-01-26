@@ -1,6 +1,6 @@
 int main()
 {
-    long int n,a[100],t;
+    long int n,a[100000],t;
     scanf("%ld",&n);
     if(n>=1 && n<=100000)
     {
